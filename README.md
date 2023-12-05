@@ -1,12 +1,11 @@
 ## New Update
 
 **Pembaruan :**
-- Telah menggunakan multi auth sessions 
-- Fix QR code di terminal & pairing code
-- ```node . --pairing```
-- Fix console logs pesan masuk 
-- Fix Downloader 
-- Penambah output url agar bisa di jalankan di render dsb.
+- Fix upload file ke server cdn 
+- Menggunakan QR dan pairing code 
+- Penggunaan pairing ```node . --pairing```
+- Fitur 80% implementasi dari website api
+- Penambah output url expres.js agar bisa di jalankan di render dsb.
 
   ## Note!
   **Important :**
