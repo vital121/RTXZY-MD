@@ -3,10 +3,10 @@ const { join } = require('path');
 
 let handler = async (m, { conn, usedPrefix, args }) => {
 
-  const tmp = ['./sessions'];
+  const sesi = ['./sessions'];
   const array = [];
 
-  tmp.forEach(dirname => {
+  sesi.forEach(dirname => {
     readdirSync(dirname).forEach(file => {
       if (file !== 'creds.json') { 
         array.push(join(dirname, file));
@@ -35,7 +35,7 @@ let handler = async (m, { conn, usedPrefix, args }) => {
   }
 
   if (deletedFiles.length == 0) {
-    conn.reply(m.chat, 'tidak ada file yang tersisa di tmp', m);
+    conn.reply(m.chat, 'tidak ada file yang tersisa di folder sessions', m);
   }
 };
 
